@@ -92,7 +92,7 @@ def main_prog(array)
         when "3"
             puts "\n  Il y a #{find_string(array)} handle de 5 caractères !\n\n"
         when "4"
-            puts "\n Il y a #{find_caps(array)} handle commencent par une majuscule !"
+            puts "\n Il y a #{find_caps(array)} handle commencent par une majuscule ! \n\n"
         when "5"
             puts "\n Le tableau à été trier par ordre alphabétique , pour afficher la modification avant / après appuyer sur 1, sinon n'importe quelle touche \n\n"
             print "> "
@@ -108,16 +108,16 @@ def main_prog(array)
                 puts "\n Avant le trie :\n #{array} \n\n Après le trie : \n #{length_order(array)}"
             end
         when "7"
-            puts "Voici la position de Mister @epenser : #{index_finder(array)}"
+            puts "Mais où est @epenser ?  @epenser est à la position #{index_finder(array)} \n\n"
         when "8"
             puts "Selectionnez le nombre de caractères que vous voulez trouver dans le tableau "
             print "> "
             nb_of_char = gets.chomp.to_i
             print "Voici vos résultat : pour #{nb_of_char} caractères il y a #{partition_of_length(array, nb_of_char)} handle ! \n\n"
         when "quit"
-            puts "Merci d'avoir essayer !"  
+            puts "\n\n Merci d'avoir essayer ! \n\n"  
         else
-            puts "Merci d'utiliser les touches du menu comprise entre '1' et '8' ou 'quit' pour quitter !"
+            puts "\n\n Merci d'utiliser les touches du menu comprise entre '1' et '8' ou 'quit' pour quitter !\n\n"
         end
     end
 end
