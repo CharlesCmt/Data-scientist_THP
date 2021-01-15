@@ -24,14 +24,15 @@ end
 
 #Combien de handle commencent par une majuscule ? (première lettre juste après le @)
 def is_upcase? (x)
-    ('A'...'Z').cover? x
+    ('A'..'Z').cover? x
 end
 
 def find_caps(arr)
     count = 0
     arr.each do |index|
-        chars = index.split('')
+        chars = index #.split('')
         if is_upcase?(chars[1])
+            puts index
             count += 1
         end
     end
